@@ -17,21 +17,50 @@ public class RetailSignInPage extends BaseSetup {
 		// we are referring to UI elements that will store in this class
 	}
 	
-	@FindBy(xpath ="//h1[text()='Sign in']")
-	public WebElement signPageLogo;
+
+	@FindBy(xpath="//a[text()='TEKSCHOOL']")
+	public WebElement tekSchoolLogo;
 	
-	@FindBy(id ="email")
+	@FindBy(id="signinLink")
+	public WebElement signInBtn;
+	
+	@FindBy(id="email")
 	public WebElement emailField;
 	
-	@FindBy(id ="password")
+	@FindBy(id="password")
 	public WebElement passwordField;
 	
-	@FindBy(xpath ="//button[text()='Login']")
-	public WebElement loginPageButton;
+	@FindBy(id="loginBtn")
+	public WebElement logInBtn;
 	
-	@FindBy(linkText ="Create New Account")
-	public WebElement createNewAccountButton;
+	@FindBy(id="logoutBtn")
+	public WebElement logOutBtn;
 	
-	@FindBy(id ="newCompanyAccount")
-	public WebElement  wantToSellSomethingLink;
+	@FindBy(id="nameInput")
+	public WebElement nameField;
+	
+	@FindBy(id="newAccountBtn")
+	public WebElement createAccountBtn;
+	
+	@FindBy(id="nameInput")
+	public WebElement signUpNameField;
+	
+	@FindBy(css = "#emailInput")
+	public WebElement signUpEmailField;
+	
+	@FindBy(css = "#passwordInput")
+	public WebElement signUpPassField;
+	
+	@FindBy(id="confirmPasswordInput")
+	public WebElement signUpConfirmPassField;
+	
+	@FindBy(xpath = "//button[@id='signupBtn']")
+	public WebElement signUpFormBtn;
+	
+	@FindBy(xpath = "//a[@id='accountLink']")
+	public WebElement accountBtn;
+	
+	
+	
+	
 }
