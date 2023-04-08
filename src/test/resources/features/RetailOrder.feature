@@ -1,4 +1,4 @@
-#@smoke
+@smoke
 Feature: TEK Retail Order feature
 
   Background: 
