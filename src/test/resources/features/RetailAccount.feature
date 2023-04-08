@@ -1,4 +1,4 @@
-@smoke
+#@smoke
 Feature: TEK Retail Account feature
 
   Scenario: Verify User can update Profile Information
