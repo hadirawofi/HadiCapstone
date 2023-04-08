@@ -226,29 +226,23 @@ public class RetailAccountSteps extends CommonUtility {
 	   
 	    click(factory.accountPage().accountAddressCountry);
 	    selectByValue(factory.accountPage().accountAddressCountry, newAddressTable.get(0).get("country"));
-	    
-
-		Thread.sleep(5000);
+	    		
 		clearMethod(factory.accountPage().accountAddressFullName);
 	    sendText(factory.accountPage().accountAddressFullName, DataGeneratorUtility.data(newAddressTable.get(0).get("fullName")));
 
-
-		Thread.sleep(5000);
 		clearMethod(factory.accountPage().accountAddressPhoneNumber);
 	    sendText(factory.accountPage().accountAddressPhoneNumber, DataGeneratorUtility.data(newAddressTable.get(0).get("phoneNumber")));
 
-
-	    Thread.sleep(5000);
 	    clearMethod(factory.accountPage().accountStreetAddress);
 	    sendText(factory.accountPage().accountStreetAddress, DataGeneratorUtility.data(newAddressTable.get(0).get("streetAddress")));
 
 
-		Thread.sleep(5000);
+		
 		clearMethod(factory.accountPage().accountAptAddress);
 	    sendText(factory.accountPage().accountAptAddress, newAddressTable.get(0).get("apt"));
 
 
-		Thread.sleep(5000);	    
+		    
 		clearMethod(factory.accountPage().accountCityAddress);
 	    sendText(factory.accountPage().accountCityAddress, DataGeneratorUtility.data(newAddressTable.get(0).get("city")));
 
@@ -256,7 +250,7 @@ public class RetailAccountSteps extends CommonUtility {
 	    sendText(factory.accountPage().accountStateAddress, newAddressTable.get(0).get("state"));
 	    
 
-	    Thread.sleep(5000);
+	    
 	    clearMethod(factory.accountPage().accountZipCodeAddress);
 	    sendText(factory.accountPage().accountZipCodeAddress, DataGeneratorUtility.data(newAddressTable.get(0).get("zipCode")));
 	    logger.info("User filled the address info");
