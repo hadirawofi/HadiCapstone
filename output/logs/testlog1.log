@@ -1964,3 +1964,13 @@
 2023-04-08 14:31:03,317 [main] INFO logger_File - User filled the signUp information
 2023-04-08 14:31:03,557 [main] INFO logger_File - User clicked on sing up button
 2023-04-08 14:31:04,301 [main] INFO logger_File - user is login into account page
+2023-04-08 15:53:49,058 [main] INFO logger_File - user is on retail website
+2023-04-08 15:53:49,061 [main] INFO logger_File - Actual Title React App Equals  ExpectedTitle React App
+2023-04-08 15:53:49,519 [main] INFO logger_File - user clicked on signIn buttn
+2023-04-08 15:53:52,982 [main] INFO logger_File - user entered email and password
+2023-04-08 15:53:55,380 [main] INFO logger_File - user is on account page
+2023-04-08 15:53:57,202 [main] INFO logger_File - User Clicked on account button
+2023-04-08 15:53:57,563 [main] INFO logger_File - User clicked on add payment method
+2023-04-08 15:53:59,904 [main] INFO logger_File - User filled the account information
+2023-04-08 15:53:59,996 [main] INFO logger_File - User Clicked on add card button
+2023-04-08 15:54:01,117 [main] INFO logger_File - User has added a Payment Method Successfuly
