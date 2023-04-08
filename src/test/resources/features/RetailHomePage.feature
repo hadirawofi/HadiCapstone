@@ -1,4 +1,4 @@
-@Smoketest
+@smoke
 Feature: Tek Retail HomePage feature
 
   Background: 

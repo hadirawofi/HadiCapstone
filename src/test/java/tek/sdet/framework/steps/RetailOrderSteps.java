@@ -213,7 +213,7 @@ public class RetailOrderSteps extends CommonUtility {
    	@And("User select the Return Reason {string}")
    	public void userSelectTheReturnReason(String reason) {
    	    selectByVisibleText(factory.orderPage().orderReturnReason, reason);
-   	    logger.info("User selected the return reson");
+   	    logger.info("User selected the return reason");
    	}
    	
    	@And("User select the drop off service {string}")

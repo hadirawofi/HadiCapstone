@@ -54,13 +54,12 @@ public class RetailSignInPage extends BaseSetup {
 	@FindBy(id="confirmPasswordInput")
 	public WebElement signUpConfirmPassField;
 	
-	@FindBy(xpath = "//button[@id='signupBtn']")
+	@FindBy(xpath = "//button[text()='Sign Up']")
 	public WebElement signUpFormBtn;
 	
 	@FindBy(xpath = "//a[@id='accountLink']")
 	public WebElement accountBtn;
 	
-	
-	
-	
+	@FindBy(xpath="//h1[contains(text(),'Your Profile')]")
+	public WebElement YourProfileText;
 }

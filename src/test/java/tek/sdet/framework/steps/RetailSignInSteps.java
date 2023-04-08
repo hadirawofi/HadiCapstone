@@ -21,7 +21,7 @@ public class RetailSignInSteps extends CommonUtility {
 	@When("User click on Sign in option")
 	public void userClickOnSignInOption() {
 	    click(factory.signInPage().signInBtn);
-	    logger.info("user clicked on signin buttn");
+	    logger.info("user clicked on signIn buttn");
 	}
 	@When("User enter email {string} and password {string}")
 	public void userEnterEmailAndPassword(String emailValue, String passwordValue) {
@@ -45,7 +45,7 @@ public class RetailSignInSteps extends CommonUtility {
 	
 	//Scenario #2
 	
-	@When("User click on Create New Account button")
+	@When("User click on Create new Account button")
 	public void userClickOnCreateNewAccountButton() {
 	    click(factory.signInPage().createAccountBtn);
 	    logger.info("User clicked on Create new account button");
@@ -63,7 +63,7 @@ public class RetailSignInSteps extends CommonUtility {
 		
 		
 	}
-	@When("User click on SignUp button")
+	@When("User click on signUp button")
 	public void userClickOnSignUpButton() {
 		click(factory.signInPage().signUpFormBtn);
 		logger.info("User clicked on sing up button");
@@ -72,10 +72,9 @@ public class RetailSignInSteps extends CommonUtility {
 	}
 	@Then("User should be logged into account page")
 	public void userShouldBeLoggedIntoAccountPage() {
+		waitTillPresence(factory.accountPage().profileImage);
 		Assert.assertTrue(isElementDisplayed(factory.accountPage().profileImage));
-		logger.info("User is on account page");
-		
-	   
+		logger.info("user is login into account page");
 	}
 	
 	

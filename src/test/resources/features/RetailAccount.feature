@@ -1,7 +1,6 @@
-
+@smoke
 Feature: TEK Retail Account feature
 
- 
   Scenario: Verify User can update Profile Information
     Given User is on retail website
     When User click on Sign in option
@@ -9,7 +8,7 @@ Feature: TEK Retail Account feature
     And User click on login button
     And User should be logged in into Account
     When User click on Account option
-    And User update Name 'Hadi' and Phone '2025096268'
+    And User update Name 'fullName' and Phone 'phoneNumber'
     And User click on Update button
     Then user profile information should be updated
 
@@ -17,13 +16,13 @@ Feature: TEK Retail Account feature
   Scenario: Verify User can Update password
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'hamza@tekschool.us' and password 'Hamza@4030'
+    And User enter email 'abdul@tekschool.us' and password 'Tek@12345'
     And User click on login button
     And User should be logged in into Account
     And User click on Account option
     And User enter below information
       | previousPassword | newPassword | confirmPassword |
-      | Hamza@4030        | Tek@12345   | Tek@12345       |
+      | Tek@12345        | teK@12345   | teK@12345       |
     And User click on Change Password button
     Then a message should be displayed ‘Password Updated Successfully’
 
@@ -69,7 +68,6 @@ Feature: TEK Retail Account feature
     Then payment details should be removed
 
   #6 Passed
-  @Tektest
   Scenario: Verify User can add an Address
     Given User is on retail website
     When User click on Sign in option
