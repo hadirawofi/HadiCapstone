@@ -1,6 +1,13 @@
 #@smoke
 Feature: TEK Retail Order feature
 
+#@smoke
+Feature: TEK Retail Order feature
+
+#@smoke
+Feature: TEK Retail Order feature
+
+
   Background: 
     Given User is on retail website
     When User click on Sign in option
