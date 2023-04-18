@@ -1,5 +1,6 @@
 @smoke
 Feature: TEK Retail Account feature
+// this is for test of Gitup repository
 
   Scenario: Verify User can update Profile Information
     Given User is on retail website
