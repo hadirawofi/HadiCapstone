@@ -83,6 +83,7 @@ Feature: TEK Retail Account feature
     Then a message should be displayed ‘Address Added Successfully’
 
   #7 Passed
+  
   Scenario: Verify User can edit an Address added on account
     Given User is on retail website
     When User click on Sign in option

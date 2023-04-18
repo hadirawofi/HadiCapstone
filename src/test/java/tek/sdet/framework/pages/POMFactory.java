@@ -3,6 +3,8 @@ package tek.sdet.framework.pages;
 import tek.sdet.framework.base.BaseSetup;
 
 public class POMFactory extends BaseSetup {
+	
+	// In POM factory we have to create object of all classes.
 	private RetailHomePage homePage;
 	private RetailSignInPage signInPage;
 	private RetailAccountPage accountPage;
